@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #FBF4E4;
+  }
+  h1, h2, h3, h4 {
+    font-family: theme('fontFamily.display');
+    text-wrap: balance;
+  }
+  ::selection {
+    background-color: #F0AE0A;
+    color: #2A1B10;
+  }
+  :focus-visible {
+    outline: 2px solid #C11C2C;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-chili;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-bold tracking-wide transition-all duration-300 ease-out active:scale-[0.97] disabled:opacity-50 disabled:pointer-events-none;
+  }
+  .btn-primary {
+    @apply btn bg-gold text-espresso shadow-soft hover:bg-gold-light hover:shadow-card hover:-translate-y-0.5;
+  }
+  .btn-dark {
+    @apply btn bg-espresso text-cream shadow-soft hover:bg-espresso-soft hover:-translate-y-0.5;
+  }
+  .btn-outline {
+    @apply btn border-2 border-espresso/15 bg-transparent text-espresso hover:border-espresso hover:-translate-y-0.5;
+  }
+  .btn-chili {
+    @apply btn bg-chili text-cream shadow-soft hover:bg-chili-deep hover:-translate-y-0.5;
+  }
+  .btn-ghost-light {
+    @apply btn border-2 border-cream/40 text-cream hover:border-cream hover:bg-cream/10;
+  }
+  .card {
+    @apply rounded-3xl bg-white/70 shadow-soft ring-1 ring-espresso/5 backdrop-blur-sm;
+  }
+  .section {
+    @apply py-20 md:py-28;
+  }
+  .input-field {
+    @apply w-full rounded-2xl border-2 border-espresso/10 bg-white px-4 py-3 text-espresso placeholder:text-espresso/40 outline-none transition focus:border-gold focus:ring-4 focus:ring-gold/20;
+  }
+  .label-field {
+    @apply mb-1.5 block text-xs font-bold uppercase tracking-wider text-espresso-soft/80;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .bg-noise {
+    background-image: theme('backgroundImage.grain');
+  }
+}
