@@ -5,7 +5,6 @@
 export const CATEGORIES = [
   { id: 'all', label: 'All Tea' },
   { id: 'black-tea', label: 'Black Tea' },
-  { id: 'premium-tea', label: 'Premium Tea' },
   { id: 'family-packs', label: 'Family Packs' },
   { id: 'special-offers', label: 'Special Offers' },
 ]
@@ -24,10 +23,11 @@ export const PRODUCTS = [
     reviews: 214,
     badge: 'Best Seller',
     stock: 'in-stock',
-    description:
-      'Our signature blend of hand-picked CTC leaves, brewed dark, bold and full-bodied — the pack that keeps the whole household in chai.',
-    features: ['Rich, full-bodied liquor', 'Strong aroma, low bitterness', 'Ideal for doodh patti & desi chai'],
+    description: 
+      'Our best-value bag for big families and busy kitchens — the same bold Junoon taste in a large, budget-friendly pack.',
+    features: ['Lowest price per kg', 'Perfect for large households', 'Restaurant & dera favourite'],
     image: 'pack',
+     
   },
   {
     id: 'jt-500g',
@@ -43,9 +43,10 @@ export const PRODUCTS = [
     badge: null,
     stock: 'in-stock',
     description:
-      'The same bold Junoon character in a lighter pack — perfect for smaller households or trying us for the first time.',
-    features: ['Everyday strong brew', 'Consistent taste, every cup', 'Great value pack'],
+      'A compact pack of our classic blend — light on the pocket, generous on flavour. Ideal for the office pantry or a quick top-up.',
+    features: ['Compact everyday pack', 'Bold colour, balanced taste', 'Resealable pouch'],
     image: 'pack',
+      
   },
   {
     id: 'jt-250g',
@@ -79,9 +80,10 @@ export const PRODUCTS = [
     badge: 'Sale',
     stock: 'in-stock',
     description:
-      'Our best-value bag for big families and busy kitchens — the same bold Junoon taste in a large, budget-friendly pack.',
-    features: ['Lowest price per kg', 'Perfect for large households', 'Restaurant & dera favourite'],
+      'The same bold Junoon character in a lighter pack — perfect for smaller households or trying us for the first time.',
+    features: ['Everyday strong brew', 'Consistent taste, every cup', 'Great value pack'],
     image: 'pack',
+      
   },
  
  
