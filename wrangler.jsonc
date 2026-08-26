@@ -1,6 +1,6 @@
 {
   "name": "junoon-website",
-  "compatibility_date": "2026-08-23",
+  "compatibility_date": "2026-08-26"
   "main": "./worker/index.js",
   "assets": {
     "directory": "./dist",
